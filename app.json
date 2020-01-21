@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "whatsapp_baru",
-    "slug": "whatsapp_baru",
+    "name": "WhatsApp",
+    "slug": "WhatsApp",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -25,6 +25,10 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "androidStatusBar": {
+      "barStyle":"light-content",
+      "backgroundColor": "#075e54"
     }
   }
 }
