@@ -3,6 +3,7 @@ import { AppLoading } from 'expo';
 import { Container, Separator, Fab, Header, Tab, Tabs, TabHeading, Icon, Text, Left, Right, Title, Button, Body, ListItem, Thumbnail, List, Content } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
+import CameraScreen from './image/camera';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -46,7 +47,7 @@ export default class App extends React.Component {
           {/* ************************CAMERA************************** */}
 
           <Tab heading={<TabHeading style={{ backgroundColor: "#075e54" }}><Icon name="camera" /></TabHeading>}>
-            <Text />
+            <CameraScreen />
           </Tab>
 
           {/* ******************CHAT********************* */}
@@ -206,6 +207,29 @@ export default class App extends React.Component {
                     <Text note>25 menit yang lalu</Text>
                   </Body>
                 </ListItem>
+                <ListItem itemDivider style={{ marginTop: 5 }}>
+                  <Left>
+                    <Text note>Pembaruan yang telah dilihat</Text>
+                  </Left>
+                </ListItem>
+                <ListItem avatar>
+                  <Left>
+                    <Thumbnail source={require('/project react/whatsapp_baru/image/avatar.jpg')} />
+                  </Left>
+                  <Body>
+                    <Text>Ajon</Text>
+                    <Text note>10 menit yang lalu</Text>
+                  </Body>
+                </ListItem>
+                <ListItem avatar>
+                  <Left>
+                    <Thumbnail source={require('/project react/whatsapp_baru/image/avatar.jpg')} />
+                  </Left>
+                  <Body>
+                    <Text>Nujul</Text>
+                    <Text note>25 menit yang lalu</Text>
+                  </Body>
+                </ListItem>
               </Content>
             </Container>
             <Fab
@@ -240,7 +264,7 @@ export default class App extends React.Component {
                     </Left>
                     <Body>
                       <Text>Sankhadeep</Text>
-                      <Text note numberOfLines={1}>Its time to build a difference . .</Text>
+                      <Text note numberOfLines={1}>Kemarin 19.14</Text>
                     </Body>
                     <Right>
                       <Button transparent>
@@ -254,7 +278,7 @@ export default class App extends React.Component {
                     </Left>
                     <Body>
                       <Text>Sankhadeep</Text>
-                      <Text note numberOfLines={1}>Its time to build a difference . .</Text>
+                      <Text note numberOfLines={1}>Kemarin 20.20</Text>
                     </Body>
                     <Right>
                       <Button transparent>
@@ -268,7 +292,7 @@ export default class App extends React.Component {
                     </Left>
                     <Body>
                       <Text>Sankhadeep</Text>
-                      <Text note numberOfLines={1}>Its time to build a difference . .</Text>
+                      <Text note numberOfLines={1}>Kemarin 17.20</Text>
                     </Body>
                     <Right>
                       <Button transparent>
