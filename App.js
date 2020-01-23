@@ -233,22 +233,14 @@ export default class App extends React.Component {
               </Content>
             </Container>
             <Fab
-              active={this.state.active}
-              direction="up"
-              containerStyle={{}}
+              style={{ backgroundColor: '#F4F4F4', marginBottom:65, height:50, width:50 }}
+              position="bottomRight">
+              <Icon name="create" style={{color:'black'}}/>
+            </Fab>
+            <Fab
               style={{ backgroundColor: '#25D366' }}
-              position="bottomRight"
-              onPress={() => this.setState({ active: !this.state.active })}>
+              position="bottomRight">
               <Icon name="camera" />
-              <Button style={{ backgroundColor: '#34A34F' }}>
-                <Icon name="logo-whatsapp" />
-              </Button>
-              <Button style={{ backgroundColor: '#3B5998' }}>
-                <Icon name="logo-facebook" />
-              </Button>
-              <Button disabled style={{ backgroundColor: '#DD5144' }}>
-                <Icon name="mail" />
-              </Button>
             </Fab>
           </Tab>
 
@@ -264,7 +256,7 @@ export default class App extends React.Component {
                     </Left>
                     <Body>
                       <Text>Sankhadeep</Text>
-                      <Text note numberOfLines={1}>Kemarin 19.14</Text>
+                      <Text note numberOfLines={1}><Icon name="redo" style={{color:'green'}}/> Kemarin 19.14</Text>
                     </Body>
                     <Right>
                       <Button transparent>
@@ -278,7 +270,7 @@ export default class App extends React.Component {
                     </Left>
                     <Body>
                       <Text>Sankhadeep</Text>
-                      <Text note numberOfLines={1}>Kemarin 20.20</Text>
+                      <Text note numberOfLines={1}><Icon name="undo" style={{color:'red'}}/> Kemarin 20.20</Text>
                     </Body>
                     <Right>
                       <Button transparent>
@@ -292,7 +284,7 @@ export default class App extends React.Component {
                     </Left>
                     <Body>
                       <Text>Sankhadeep</Text>
-                      <Text note numberOfLines={1}>Kemarin 17.20</Text>
+                      <Text note numberOfLines={1}><Icon name="redo" style={{color:'green'}}/> Kemarin 17.20</Text>
                     </Body>
                     <Right>
                       <Button transparent>
