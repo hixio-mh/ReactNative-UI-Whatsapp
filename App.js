@@ -3,7 +3,7 @@ import { AppLoading } from 'expo';
 import { Container, Separator, Fab, Header, Tab, Tabs, TabHeading, Icon, Text, Left, Right, Title, Button, Body, ListItem, Thumbnail, List, Content } from 'native-base';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
-import CameraScreen from './image/camera';
+import CameraScreen from './screens/camera';
 
 export default class App extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
-import { Camera } from 'expo-camera';
 import React, { useState, useEffect } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
+import { Camera } from 'expo-camera';
 import {Icon} from 'native-base';
 
 export default function CameraScreen() {
@@ -27,8 +27,8 @@ export default function CameraScreen() {
           style={{
             flex: 1,
             backgroundColor: 'transparent',
-            paddingTop:500,
-            marginRight:195
+            marginRight:195,
+            marginTop:490
           }}>
           <TouchableOpacity
             style={{
@@ -43,14 +43,10 @@ export default function CameraScreen() {
                   : Camera.Constants.Type.back
               );
             }}>
-            
             <Text style={{ fontSize: 18, marginBottom: 100, color: 'white', alignItems:'center' }}><Icon name="reverse-camera" style={{color:'white', fontSize:60}}/></Text>
-            
-            
           </TouchableOpacity>
         </View>
       </Camera>
     </View>
-    
   );
 }
