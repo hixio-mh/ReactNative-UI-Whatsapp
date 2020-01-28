@@ -26,7 +26,7 @@ export default class PanggilanScreen extends React.Component {
                     </Body>
                     <Right>
                       <Button transparent>
-                        <Icon name="call" />
+                        <Icon style={{ color: 'green' }} name="call" />
                       </Button>
                     </Right>
                   </ListItem>
@@ -40,7 +40,7 @@ export default class PanggilanScreen extends React.Component {
                     </Body>
                     <Right>
                       <Button transparent>
-                        <Icon name="videocam" />
+                        <Icon style={{ color: 'green' }} name="videocam" />
                       </Button>
                     </Right>
                   </ListItem>
@@ -54,7 +54,7 @@ export default class PanggilanScreen extends React.Component {
                     </Body>
                     <Right>
                       <Button transparent>
-                        <Icon name="call" />
+                        <Icon style={{ color: 'green' }} name="call" />
                       </Button>
                     </Right>
                   </ListItem>
